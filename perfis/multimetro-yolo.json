@@ -1,0 +1,58 @@
+{
+  "name": "multimetro-yolo",
+  "unit": "volts",
+  "roi": {
+    "x": 0.015,
+    "y": 0.13399503722084366,
+    "w": 0.9475,
+    "h": 0.7121588089330024
+  },
+  "engine": "yolo",
+  "digits": [],
+  "decimal_mode": "detect",
+  "decimal_points": [],
+  "decimal_places": 0,
+  "require_decimal": true,
+  "sign": null,
+  "polarity": "dark",
+  "threshold": "otsu",
+  "otsu_offset": -3,
+  "digit_slant": 0,
+  "segment_probes": [],
+  "segment_search": 0,
+  "track_display": true,
+  "reference_image": "/home/senai/estagio_/perfis/multimetro-perspectiva.referencia.png",
+  "perspective": {
+    "corners": [
+      [
+        0.4194722477582584,
+        0.5080905962056675
+      ],
+      [
+        0.5168334865495504,
+        0.5097087494023818
+      ],
+      [
+        0.5150136462965451,
+        0.6051780053405337
+      ],
+      [
+        0.40764330997422304,
+        0.5987055198871045
+      ]
+    ],
+    "width": 137,
+    "height": 69
+  },
+  "segment_on": 0.45,
+  "point_on": 0.3,
+  "ambiguity_margin": 0.08,
+  "min_confidence": 0.55,
+  "value_min": null,
+  "value_max": null,
+  "yolo_weights": "/home/senai/estagio_/models/digits/best.pt",
+  "yolo_imgsz": 640,
+  "yolo_device": "cpu",
+  "yolo_detection_conf": 0.15,
+  "yolo_expected_digits": 4
+}
